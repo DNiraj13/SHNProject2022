@@ -40,7 +40,7 @@ public class GeneralStepDefs {
         this.scenario=scenario;
         logger.info("Scenario started..");
         logger.info("Executing scenario with tags:"+scenario.getName()+" "+scenario.getSourceTagNames());
-        MyScreenRecorder.startRecording(scenario.getName().substring(0,10));
+        //MyScreenRecorder.startRecording(scenario.getName().substring(0,10));
 
     }
 
@@ -49,7 +49,7 @@ public class GeneralStepDefs {
         try{
             this.scenario=scenario;
             new CommonFunctions().takeScreenshot(scenario, DriverManager.getDriver());
-            MyScreenRecorder.stopRecording();
+            //MyScreenRecorder.stopRecording();
         }
         finally {
             DriverManager.closeDriver();
