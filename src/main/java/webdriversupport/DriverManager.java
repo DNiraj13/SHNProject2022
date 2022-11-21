@@ -60,6 +60,7 @@ public class DriverManager {
         chromeOptions.addArguments("disable-infobars");
         chromeOptions.addArguments("--disable-popup-blocking");
         chromeOptions.addArguments("--disable-notifications");
+        chromeOptions.addArguments("--headless");
         WebDriver chromeDriver = new ChromeDriver(chromeOptions);
         chromeDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         chromeDriver.manage().window().setSize(new Dimension(1208, 1024));
