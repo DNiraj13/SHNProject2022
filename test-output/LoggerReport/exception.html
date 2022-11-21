@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">java.lang.AssertionError</a>
+							<a href="#" class="item-title _500">java.awt.HeadlessException</a>
 							<div class="item-except text-sm text-muted h-1x">
-								1 tests
+								4 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">java.lang.AssertionError</h5>
+								<h5 class="mb-4">java.awt.HeadlessException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="12" parent-id="1">
+<tr class="s-fail" test-id="4" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">When user apply "audi","A4" and "10.000 km" filter <br/><span class="text-muted text-sm">apply filter</span></td>
-	<td>0h 0m 31s+524msc</td>
+	<td class="_600">stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario) <br/><span class="text-muted text-sm">Verify Eligibility Criteria for the given person</span></td>
+	<td>0h 0m 0s+150msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,17 +137,265 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">java.lang.AssertionError: Element was not visibleExpected condition failed: waiting for visibility of element located by By.xpath: //div[starts-with(@class,'titleWrapper')] (tried for 10 second(s) with 500 milliseconds interval)
+		<textarea disabled class="code-block">java.awt.HeadlessException: 
+No X11 DISPLAY variable was set, but this program performed an operation which requires it.
+	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
+	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
+	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
+</textarea>
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="12" parent-id="1">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario) <br/><span class="text-muted text-sm">Verify Eligibility Criteria for the given person</span></td>
+	<td>0h 0m 0s+1msc</td>
+	<td></td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+		
+		<textarea disabled class="code-block">java.awt.HeadlessException: 
+No X11 DISPLAY variable was set, but this program performed an operation which requires it.
+	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
+	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
+	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
+</textarea>
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="21" parent-id="1">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario) <br/><span class="text-muted text-sm">Verify Eligibility Criteria for the given person with partner claiming benefits</span></td>
+	<td>0h 0m 0s+0msc</td>
+	<td></td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+		
+		<textarea disabled class="code-block">java.awt.HeadlessException: 
+No X11 DISPLAY variable was set, but this program performed an operation which requires it.
+	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
+	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
+	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
+</textarea>
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="29" parent-id="1">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario) <br/><span class="text-muted text-sm">Verify Eligibility Criteria for the given person with partner claiming benefits</span></td>
+	<td>0h 0m 0s+0msc</td>
+	<td></td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+		
+		<textarea disabled class="code-block">java.awt.HeadlessException: 
+No X11 DISPLAY variable was set, but this program performed an operation which requires it.
+	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
+	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
+	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
+</textarea>
+	</td>
+</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="list-item attr">
+						<div class="list-body">
+							<a href="#" class="item-title _500">org.openqa.selenium.SessionNotCreatedException</a>
+							<div class="item-except text-sm text-muted h-1x">
+								4 tests
+							</div>
+							<div class="tc d-none">
+								<h5 class="mb-4">org.openqa.selenium.SessionNotCreatedException</h5>
+								<table class="table">
+									<thead><tr>
+										<th id="status-col"></th>
+										<th>Test</th>
+										<th>Duration</th>
+										<th>Attributes</th>
+										<th>Media</th>
+										<th>Source</th>
+									</tr></thead>
+									<tbody>
+	
+<tr class="s-fail" test-id="10" parent-id="1">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario) <br/><span class="text-muted text-sm">Verify Eligibility Criteria for the given person</span></td>
+	<td>0h 0m 2s+866msc</td>
+	<td></td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+		
+		<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
 Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
-System info: host: 'LAPTOP-K3PNVN9H', ip: '192.168.32.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\kunal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c4b6829f6f73466ed39254e58d2f60ad
-	at org.junit.Assert.fail(Assert.java:89)
-	at pageobjects.BasePage.waitForElementVisibility(BasePage.java:53)
-	at pageobjects.EligibilityChecker.userFilter(SearchPage.java:51)
-	at stepdefs.ApplicationStepDefs.userApplyAndFilter(ApplicationStepDefs.java:24)
-	at ✽.user apply "audi","A4" and "10.000 km" filter(classpath:cucumber/Search.feature:6)
+Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
+	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
+	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
+	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
+	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
+	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
+	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
+	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
+</textarea>
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="18" parent-id="1">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario) <br/><span class="text-muted text-sm">Verify Eligibility Criteria for the given person</span></td>
+	<td>0h 0m 0s+518msc</td>
+	<td></td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+		
+		<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
+Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
+System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
+	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
+	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
+	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
+	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
+	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
+	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
+	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
+</textarea>
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="27" parent-id="1">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario) <br/><span class="text-muted text-sm">Verify Eligibility Criteria for the given person with partner claiming benefits</span></td>
+	<td>0h 0m 0s+406msc</td>
+	<td></td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+		
+		<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
+Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
+System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
+	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
+	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
+	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
+	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
+	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
+	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
+	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
+</textarea>
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="35" parent-id="1">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario) <br/><span class="text-muted text-sm">Verify Eligibility Criteria for the given person with partner claiming benefits</span></td>
+	<td>0h 0m 0s+343msc</td>
+	<td></td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+		
+		<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
+Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
+System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
+	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
+	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
+	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
+	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
+	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
+	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
+	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
 </textarea>
 	</td>
 </tr>
@@ -175,7 +423,7 @@ Session ID: c4b6829f6f73466ed39254e58d2f60ad
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Oct 22, 2021 08:56:32 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Nov 21, 2022 10:39:46 AM</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>
