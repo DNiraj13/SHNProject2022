@@ -44,7 +44,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -54,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 21, 2022 10:39:46 AM</span>
+			<span class='label blue darken-3 suite-start-time'>May 15, 2022 05:57:33 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -69,8 +68,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -123,10 +121,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -137,10 +135,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>4</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -153,12 +151,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>20</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='28.571%'>8</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='71.429%'>20</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='71.429%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -176,11 +174,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Validate the person Eligibility Criteria</span>
-						<span class='test-time'>Nov 21, 2022 10:39:47 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>May 15, 2022 05:57:33 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -189,281 +187,125 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario outline node' test-id='2' status='fail'>
+<div class='scenario outline node' test-id='2' status='pass'>
 	<div class='category-list'>
 		<span class='category label'>@Smoke</span>
 	</div>
-	<span class='duration right label'>0h 0m 3s+730ms</span>
+	<span class='duration right label'>0h 0m 51s+415ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Verify Eligibility Criteria for the given person</div>
-		<table class='runtime-table table-striped table'><tr><td>Country</td><td>GPOption</td><td>DentalCountry</td><td>DateOfBirth</td><td>PartnerStatus</td><td>PartnerClaimBenefits</td><td>PregnancyStatus</td><td>MilitaryServingInjuryStatus</td><td>DiabetesStatus</td><td>GlaucomaStatus</td><td>CareHomeStatus</td><td>SavingsRange</td></tr><tr><td>Wales</td><td>Yes</td><td>Wales</td><td>10-02-1998</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Wales</td><td>No</td><td>Scotland</td><td>10-02-1970</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr></table>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Verify Eligibility Criteria for the given person</div>
+		<table class='runtime-table table-striped table'><tr><td>Country</td><td>GPOption</td><td>DentalCountry</td><td>DateOfBirth</td><td>PartnerStatus</td><td>PartnerClaimBenefits</td><td>PregnancyStatus</td><td>MilitaryServingInjuryStatus</td><td>DiabetesStatus</td><td>GlaucomaStatus</td><td>CareHomeStatus</td><td>SavingsRange</td></tr><tr><td>Wales</td><td>Yes</td><td>WALES</td><td>10-02-1998</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Wales</td><td>No</td><td>SCOTLAND</td><td>10-02-1970</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr></table>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Verify Eligibility Criteria for the given person</div>
+		<li test-id='3' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Eligibility Criteria for the given person</div>
 			<ul class='gc steps'>
-				<li test-id='4' class='gc * fail' status='fail'>
-					<h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)</h6>
-					<textarea disabled class="code-block">java.awt.HeadlessException: 
-No X11 DISPLAY variable was set, but this program performed an operation which requires it.
-	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
-	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
-	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
-</textarea>
+				<li test-id='5' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given user is in Eligibility Checker homePage</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='5' class='gc given skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given user is in Eligibility Checker homePage</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='6' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_select_its_and_applicable(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user select its "Wales","Yes" and applicable "WALES"</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='6' class='gc when skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_select_its_and_applicable(java.lang.String,java.lang.String,java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When user select its "Wales","Yes" and applicable "Wales"</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='7' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enters_its(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user enters its "10-02-1998"</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='7' class='gc and skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enters_its(java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And user enters its "10-02-1998"</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='8' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enters_its(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user enters its "Yes","No","Yes"</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='8' class='gc and skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enters_its(java.lang.String,java.lang.String,java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And user enters its "Yes","No","Yes"</h6>
-					<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='9' class='gc then skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enter_its_details_regarding(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then user enter its details regarding "Yes","Yes","Yes","Yes","Yes"</h6>
-					<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='10' class='gc * fail' status='fail'>
-					<h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)</h6>
-					<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
-Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
-System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
-Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
-	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-</textarea>
+				<li test-id='9' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enter_its_details_regarding(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user enter its details regarding "Yes","Yes","Yes","Yes","Yes"</h6>
+					<div class="node-step"></div>
 				</li>
 			</ul>
 		</li>
-		<li test-id='11' class='node scenario fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Verify Eligibility Criteria for the given person</div>
+		<li test-id='11' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Eligibility Criteria for the given person</div>
 			<ul class='gc steps'>
-				<li test-id='12' class='gc * fail' status='fail'>
-					<h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)</h6>
-					<textarea disabled class="code-block">java.awt.HeadlessException: 
-No X11 DISPLAY variable was set, but this program performed an operation which requires it.
-	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
-	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
-	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
-</textarea>
+				<li test-id='13' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given user is in Eligibility Checker homePage</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='13' class='gc given skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given user is in Eligibility Checker homePage</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='14' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_select_its_and_applicable(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user select its "Wales","No" and applicable "SCOTLAND"</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='14' class='gc when skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_select_its_and_applicable(java.lang.String,java.lang.String,java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When user select its "Wales","No" and applicable "Scotland"</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='15' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enters_its(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user enters its "10-02-1970"</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='15' class='gc and skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enters_its(java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And user enters its "10-02-1970"</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='16' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enters_its(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user enters its "No","No","No"</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='16' class='gc and skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enters_its(java.lang.String,java.lang.String,java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And user enters its "No","No","No"</h6>
-					<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='17' class='gc then skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enter_its_details_regarding(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then user enter its details regarding "No","No","No","No","No"</h6>
-					<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='18' class='gc * fail' status='fail'>
-					<h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)</h6>
-					<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
-Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
-System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
-Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
-	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-</textarea>
+				<li test-id='17' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enter_its_details_regarding(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user enter its details regarding "No","No","No","No","No"</h6>
+					<div class="node-step"></div>
 				</li>
 			</ul>
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='19' status='fail'>
+<div class='scenario outline node' test-id='19' status='pass'>
 	<div class='category-list'>
 		<span class='category label'>@Smoke</span>
 	</div>
-	<span class='duration right label'>0h 0m 0s+760ms</span>
+	<span class='duration right label'>0h 0m 52s+257ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Verify Eligibility Criteria for the given person with partner claiming benefits</div>
-		<table class='runtime-table table-striped table'><tr><td>Country</td><td>GPOption</td><td>DentalCountry</td><td>DateOfBirth</td><td>PartnerStatus</td><td>PartnerClaimBenefits</td><td>UniversalCreditPayment</td><td>MilitaryServingInjuryStatus</td><td>DiabetesStatus</td><td>GlaucomaStatus</td><td>CareHomeStatus</td><td>SavingsRange</td></tr><tr><td>Wales</td><td>Yes</td><td>Wales</td><td>10-02-1998</td><td>Yes</td><td>Yes</td><td>yes-universal</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td>Wales</td><td>Yes</td><td>Wales</td><td>10-02-1963</td><td>No</td><td>Yes</td><td>not-yet</td><td>No</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td></tr></table>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Verify Eligibility Criteria for the given person with partner claiming benefits</div>
+		<table class='runtime-table table-striped table'><tr><td>Country</td><td>GPOption</td><td>DentalCountry</td><td>DateOfBirth</td><td>PartnerStatus</td><td>PartnerClaimBenefits</td><td>UniversalCreditPayment</td><td>PregnancyStatus</td><td>MilitaryServingInjuryStatus</td><td>DiabetesStatus</td><td>GlaucomaStatus</td><td>CareHomeStatus</td><td>SavingsRange</td></tr><tr><td>Wales</td><td>Yes</td><td>WALES</td><td>10-02-1998</td><td>Yes</td><td>Yes</td><td>yes-universal</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td>Wales</td><td>Yes</td><td>WALES</td><td>10-02-1998</td><td>Yes</td><td>Yes</td><td>not-yet</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td></tr></table>
 	</div>
 	<ul class='steps'>
-		<li test-id='20' class='node scenario fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Verify Eligibility Criteria for the given person with partner claiming benefits</div>
+		<li test-id='20' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Eligibility Criteria for the given person with partner claiming benefits</div>
 			<ul class='gc steps'>
-				<li test-id='21' class='gc * fail' status='fail'>
-					<h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)</h6>
-					<textarea disabled class="code-block">java.awt.HeadlessException: 
-No X11 DISPLAY variable was set, but this program performed an operation which requires it.
-	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
-	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
-	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
-</textarea>
+				<li test-id='22' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given user is in Eligibility Checker homePage</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='22' class='gc given skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given user is in Eligibility Checker homePage</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='23' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_select_its_and_applicable(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user select its "Wales","Yes" and applicable "WALES"</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='23' class='gc when skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_select_its_and_applicable(java.lang.String,java.lang.String,java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When user select its "Wales","Yes" and applicable "Wales"</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='24' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enters_its(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user enters its "10-02-1998"</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='24' class='gc and skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enters_its(java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And user enters its "10-02-1998"</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='25' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.userEntersItsAndDetails(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user enters its "Yes","Yes" and "yes-universal" details</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='25' class='gc and skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.userEntersItsAndDetails(java.lang.String,java.lang.String,java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And user enters its "Yes","Yes" and "yes-universal" details</h6>
-					<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='26' class='gc then skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enter_its_details_regarding(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then user enter its details regarding "Yes","No","No","Yes","No"</h6>
-					<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='27' class='gc * fail' status='fail'>
-					<h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)</h6>
-					<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
-Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
-System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
-Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
-	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-</textarea>
+				<li test-id='26' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enter_its_details_regarding(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user enter its details regarding "Yes","Yes","No","Yes","No"</h6>
+					<div class="node-step"></div>
 				</li>
 			</ul>
 		</li>
-		<li test-id='28' class='node scenario fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Verify Eligibility Criteria for the given person with partner claiming benefits</div>
+		<li test-id='28' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Eligibility Criteria for the given person with partner claiming benefits</div>
 			<ul class='gc steps'>
-				<li test-id='29' class='gc * fail' status='fail'>
-					<h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)</h6>
-					<textarea disabled class="code-block">java.awt.HeadlessException: 
-No X11 DISPLAY variable was set, but this program performed an operation which requires it.
-	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
-	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
-	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
-</textarea>
+				<li test-id='30' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given user is in Eligibility Checker homePage</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='30' class='gc given skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given user is in Eligibility Checker homePage</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='31' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_select_its_and_applicable(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user select its "Wales","Yes" and applicable "WALES"</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='31' class='gc when skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_select_its_and_applicable(java.lang.String,java.lang.String,java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When user select its "Wales","Yes" and applicable "Wales"</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='32' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enters_its(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user enters its "10-02-1998"</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='32' class='gc and skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enters_its(java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And user enters its "10-02-1963"</h6>
-					<div class="node-step">Step skipped</div>
+				<li test-id='33' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.userEntersItsAndDetails(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And user enters its "Yes","Yes" and "not-yet" details</h6>
+					<div class="node-step"></div>
 				</li>
-				<li test-id='33' class='gc and skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.userEntersItsAndDetails(java.lang.String,java.lang.String,java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And user enters its "No","Yes" and "not-yet" details</h6>
-					<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='34' class='gc then skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enter_its_details_regarding(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then user enter its details regarding "No","Yes","Yes","No","Yes"</h6>
-					<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='35' class='gc * fail' status='fail'>
-					<h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)</h6>
-					<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
-Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
-System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
-Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
-	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-</textarea>
+				<li test-id='34' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enter_its_details_regarding(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user enter its details regarding "No","Yes","Yes","No","Yes"</h6>
+					<div class="node-step"></div>
 				</li>
 			</ul>
 		</li>
@@ -513,13 +355,13 @@ Capabilities {}
 					<div class='category-heading'>
 						<span class='category-name'>@Smoke</span>
 						<span class='category-status right'>
-						<span class='label fail'>6</span>
+						<span class='label pass'>6</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 6</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 6</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -533,34 +375,34 @@ Capabilities {}
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 21, 2022 10:39:47 AM</td>
+										<td>May 15, 2022 05:57:33 PM</td>
 										<td class='linked' test-id='2'>Verify Eligibility Criteria for the given person</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Nov 21, 2022 10:39:47 AM</td>
+										<td>May 15, 2022 05:57:33 PM</td>
 										<td class='linked' test-id='3'>Verify Eligibility Criteria for the given person</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Nov 21, 2022 10:39:50 AM</td>
+										<td>May 15, 2022 05:58:02 PM</td>
 										<td class='linked' test-id='11'>Verify Eligibility Criteria for the given person</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Nov 21, 2022 10:39:51 AM</td>
+										<td>May 15, 2022 05:58:25 PM</td>
 										<td class='linked' test-id='19'>Verify Eligibility Criteria for the given person with partner claiming benefits</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Nov 21, 2022 10:39:51 AM</td>
+										<td>May 15, 2022 05:58:25 PM</td>
 										<td class='linked' test-id='20'>Verify Eligibility Criteria for the given person with partner claiming benefits</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Nov 21, 2022 10:39:51 AM</td>
+										<td>May 15, 2022 05:58:52 PM</td>
 										<td class='linked' test-id='28'>Verify Eligibility Criteria for the given person with partner claiming benefits</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -576,256 +418,7 @@ Capabilities {}
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>java.awt.HeadlessException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>4</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 21, 2022 10:39:47 AM</td>
-										<td class='linked' test-id='4'>stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">java.awt.HeadlessException: 
-No X11 DISPLAY variable was set, but this program performed an operation which requires it.
-	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
-	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
-	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 21, 2022 10:39:50 AM</td>
-										<td class='linked' test-id='12'>stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">java.awt.HeadlessException: 
-No X11 DISPLAY variable was set, but this program performed an operation which requires it.
-	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
-	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
-	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 21, 2022 10:39:51 AM</td>
-										<td class='linked' test-id='21'>stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">java.awt.HeadlessException: 
-No X11 DISPLAY variable was set, but this program performed an operation which requires it.
-	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
-	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
-	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 21, 2022 10:39:51 AM</td>
-										<td class='linked' test-id='29'>stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">java.awt.HeadlessException: 
-No X11 DISPLAY variable was set, but this program performed an operation which requires it.
-	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
-	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
-	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.SessionNotCreatedException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>4</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 21, 2022 10:39:47 AM</td>
-										<td class='linked' test-id='10'>stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
-Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
-System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
-Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
-	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 21, 2022 10:39:50 AM</td>
-										<td class='linked' test-id='18'>stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
-Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
-System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
-Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
-	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 21, 2022 10:39:51 AM</td>
-										<td class='linked' test-id='27'>stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
-Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
-System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
-Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
-	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 21, 2022 10:39:51 AM</td>
-										<td class='linked' test-id='35'>stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
-Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
-System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
-Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
-	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -845,25 +438,25 @@ Capabilities {}
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>28</div>
+					<div class='panel-lead'>20</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 21, 2022 10:39:46 AM</div>
+					<div class='panel-lead'>May 15, 2022 05:57:33 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 21, 2022 10:39:52 AM</div>
+			 		<div class='panel-lead'>May 15, 2022 05:59:18 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 5s+342ms</div>
+					<div class='panel-lead'>0h 1m 45s+57ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -880,11 +473,11 @@ Capabilities {}
 						</tr>
 						<tr>
 							<td>@Smoke</td>
-							<td>0</td>
 							<td>6</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -899,38 +492,38 @@ Capabilities {}
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				childCount: 4,
-				passChild: 0,
-				failChild: 4,
+				passChild: 4,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 4,
-				grandChildCount: 28,
-				passGrandChild: 0,
-				failGrandChild: 8,
+				exceptionsChild: 0,
+				grandChildCount: 20,
+				passGrandChild: 20,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 20,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 28,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Validate the person Eligibility Criteria":4.499
+			        "Validate the person Eligibility Criteria":103.996
 			};
 		</script>
 	

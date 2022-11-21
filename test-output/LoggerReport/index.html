@@ -51,14 +51,6 @@
 							</a>
 						</li>
 						<li>
-							<a href="exception.html">
-							<span class="nav-icon">
-							<i class="fa fa-warning"></i>
-							</span>
-							<span class="nav-text">Exceptions</span>
-							</a>
-						</li>
-						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -102,12 +94,12 @@
 									</span>
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-										
-										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
 										
 										
-										<a class="dropdown-item" href="#"><span class="tf" status="skip"><i class="fa fa-dot-circle-o text-blue"></i>Skip</span></a>
+										
+										
+										
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 									</div>
@@ -137,20 +129,20 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="fail">
-											<div class="st fail test l0" 
+											<div class="tsc" status="pass">
+											<div class="st pass test l0" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:57:33</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">[Validate the person Eligibility Criteria] started</span>
 												
 											</div>
-											<div class="st fail test l1" 
+											<div class="st pass test l1" 
 												tags="@Smoke"
 												devices="">
-												<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:57:33</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">|---[Verify Eligibility Criteria for the given person] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @Smoke</span>
@@ -161,11 +153,11 @@
 												</span>
 												
 											</div>
-											<div class="st fail test l2" 
+											<div class="st pass test l2" 
 												tags="@Smoke"
 												devices="">
-												<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:57:33</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Verify Eligibility Criteria for the given person] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @Smoke</span>
@@ -176,147 +168,86 @@
 												</span>
 												
 											</div>
-											<div class="st fail test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)] started</span>
-												
-												<div class="st fail">
-													<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)]</span>
-													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">java.awt.HeadlessException: 
-No X11 DISPLAY variable was set, but this program performed an operation which requires it.
-	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
-	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
-	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
-</textarea></span>
-												</div>
-											</div>
-											<div class="st skip test l3" 
-												tags=""
-												devices="">
-												<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:57:33</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is in Eligibility Checker homePage] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:57:42</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is in Eligibility Checker homePage]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","Yes" and applicable "Wales"] started</span>
+												<span class="tt">05.15.2022 17:57:42</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","Yes" and applicable "WALES"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","Yes" and applicable "Wales"]</span>
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:57:47</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","Yes" and applicable "WALES"]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:57:47</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "10-02-1998"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:57:48</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "10-02-1998"]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:57:48</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "Yes","No","Yes"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:57:53</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "Yes","No","Yes"]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:57:53</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user enter its details regarding "Yes","Yes","Yes","Yes","Yes"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:58:01</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user enter its details regarding "Yes","Yes","Yes","Yes","Yes"]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st fail test l3" 
-												tags=""
-												devices="">
-												<span class="tt">11.21.2022 10:39:47</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)] started</span>
-												
-												<div class="st fail">
-													<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)]</span>
-													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
-Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
-System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
-Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
-	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-</textarea></span>
-												</div>
-											</div>
-											<div class="st fail test l2" 
+											<div class="st pass test l2" 
 												tags="@Smoke"
 												devices="">
-												<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:58:02</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Verify Eligibility Criteria for the given person] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @Smoke</span>
@@ -327,147 +258,86 @@ Capabilities {}
 												</span>
 												
 											</div>
-											<div class="st fail test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)] started</span>
-												
-												<div class="st fail">
-													<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)]</span>
-													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">java.awt.HeadlessException: 
-No X11 DISPLAY variable was set, but this program performed an operation which requires it.
-	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
-	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
-	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
-</textarea></span>
-												</div>
-											</div>
-											<div class="st skip test l3" 
-												tags=""
-												devices="">
-												<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:58:02</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is in Eligibility Checker homePage] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:58:06</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is in Eligibility Checker homePage]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","No" and applicable "Scotland"] started</span>
+												<span class="tt">05.15.2022 17:58:06</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","No" and applicable "SCOTLAND"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","No" and applicable "Scotland"]</span>
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:58:11</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","No" and applicable "SCOTLAND"]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:58:11</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "10-02-1970"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:58:12</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "10-02-1970"]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:58:12</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "No","No","No"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:58:17</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "No","No","No"]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:58:17</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user enter its details regarding "No","No","No","No","No"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:58:25</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user enter its details regarding "No","No","No","No","No"]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st fail test l3" 
-												tags=""
-												devices="">
-												<span class="tt">11.21.2022 10:39:50</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)] started</span>
-												
-												<div class="st fail">
-													<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)]</span>
-													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
-Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
-System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
-Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
-	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-</textarea></span>
-												</div>
-											</div>
-											<div class="st fail test l1" 
+											<div class="st pass test l1" 
 												tags="@Smoke"
 												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:58:25</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">|---[Verify Eligibility Criteria for the given person with partner claiming benefits] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @Smoke</span>
@@ -478,11 +348,11 @@ Capabilities {}
 												</span>
 												
 											</div>
-											<div class="st fail test l2" 
+											<div class="st pass test l2" 
 												tags="@Smoke"
 												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:58:25</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Verify Eligibility Criteria for the given person with partner claiming benefits] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @Smoke</span>
@@ -493,147 +363,86 @@ Capabilities {}
 												</span>
 												
 											</div>
-											<div class="st fail test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)] started</span>
-												
-												<div class="st fail">
-													<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)]</span>
-													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">java.awt.HeadlessException: 
-No X11 DISPLAY variable was set, but this program performed an operation which requires it.
-	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
-	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
-	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
-</textarea></span>
-												</div>
-											</div>
-											<div class="st skip test l3" 
-												tags=""
-												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:58:25</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is in Eligibility Checker homePage] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:58:29</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is in Eligibility Checker homePage]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","Yes" and applicable "Wales"] started</span>
+												<span class="tt">05.15.2022 17:58:29</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","Yes" and applicable "WALES"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","Yes" and applicable "Wales"]</span>
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:58:34</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","Yes" and applicable "WALES"]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:58:34</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "10-02-1998"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:58:35</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "10-02-1998"]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:58:35</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "Yes","Yes" and "yes-universal" details] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:58:44</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "Yes","Yes" and "yes-universal" details]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user enter its details regarding "Yes","No","No","Yes","No"] started</span>
+												<span class="tt">05.15.2022 17:58:44</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user enter its details regarding "Yes","Yes","No","Yes","No"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user enter its details regarding "Yes","No","No","Yes","No"]</span>
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:58:51</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user enter its details regarding "Yes","Yes","No","Yes","No"]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st fail test l3" 
-												tags=""
-												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)] started</span>
-												
-												<div class="st fail">
-													<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)]</span>
-													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
-Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
-System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
-Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
-	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-</textarea></span>
-												</div>
-											</div>
-											<div class="st fail test l2" 
+											<div class="st pass test l2" 
 												tags="@Smoke"
 												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:58:52</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Verify Eligibility Criteria for the given person with partner claiming benefits] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @Smoke</span>
@@ -644,140 +453,79 @@ Capabilities {}
 												</span>
 												
 											</div>
-											<div class="st fail test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)] started</span>
-												
-												<div class="st fail">
-													<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.beforeScenario(io.cucumber.java.Scenario)]</span>
-													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">java.awt.HeadlessException: 
-No X11 DISPLAY variable was set, but this program performed an operation which requires it.
-	at java.desktop/sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186)
-	at util.MyScreenRecorder.startRecording(MyScreenRecorder.java:53)
-	at stepdefs.GeneralStepDefs.beforeScenario(GeneralStepDefs.java:43)
-</textarea></span>
-												</div>
-											</div>
-											<div class="st skip test l3" 
-												tags=""
-												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:58:52</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is in Eligibility Checker homePage] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:58:56</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is in Eligibility Checker homePage]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","Yes" and applicable "Wales"] started</span>
+												<span class="tt">05.15.2022 17:58:56</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","Yes" and applicable "WALES"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","Yes" and applicable "Wales"]</span>
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:59:00</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user select its "Wales","Yes" and applicable "WALES"]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "10-02-1963"] started</span>
+												<span class="tt">05.15.2022 17:59:00</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "10-02-1998"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "10-02-1963"]</span>
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:59:01</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "10-02-1998"]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "No","Yes" and "not-yet" details] started</span>
+												<span class="tt">05.15.2022 17:59:01</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "Yes","Yes" and "not-yet" details] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "No","Yes" and "not-yet" details]</span>
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:59:10</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And user enters its "Yes","Yes" and "not-yet" details]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">05.15.2022 17:59:10</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user enter its details regarding "No","Yes","Yes","No","Yes"] started</span>
 												
-												<div class="st skip">
-													<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">05.15.2022 17:59:17</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then user enter its details regarding "No","Yes","Yes","No","Yes"]</span>
 													
-													<span class="td">Step skipped</span>
-												</div>
-											</div>
-											<div class="st fail test l3" 
-												tags=""
-												devices="">
-												<span class="tt">11.21.2022 10:39:51</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)] started</span>
-												
-												<div class="st fail">
-													<span class="tt">11.21.2022 10:39:52</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)]</span>
-													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
-Build info: version: '4.0.0-beta-2', revision: '4ec0cfc112'
-System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
-Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:159)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:252)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:86)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:75)
-	at webdriversupport.DriverManager.getChromeDriver(DriverManager.java:63)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:39)
-	at webdriversupport.DriverManager$1.initialValue(DriverManager.java:23)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:110)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-</textarea></span>
+													<span class="td"></span>
 												</div>
 											</div>
 											</div>
