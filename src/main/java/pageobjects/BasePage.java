@@ -19,7 +19,7 @@ public class BasePage {
 
     public WebDriver driver;
     public static final Logger logger = Logger.getLogger(BasePage.class);
-    private static final long TIMEOUT = 10;
+    private static final long TIMEOUT = 20;
 
     public BasePage(){
         this.driver= DriverManager.getDriver();
