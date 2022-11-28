@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import webdriversupport.DriverManager;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -44,9 +45,10 @@ public class BasePage {
         return element;
     }
 
+
     public void waitForElementVisibility(By locator){
         try{
-            WebDriverWait wait = new WebDriverWait(driver, TIMEOUT);
+            WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(TIMEOUT));
             wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         }catch (Exception e){
             logger.error("Element was not visible:"+ e.getMessage());
@@ -58,7 +60,7 @@ public class BasePage {
         int attempts=0;
         while (attempts<3){
             try{
-                new WebDriverWait(driver,TIMEOUT).until(ExpectedConditions.visibilityOf(element));
+                new WebDriverWait(driver,Duration.ofSeconds(TIMEOUT)).until(ExpectedConditions.visibilityOf(element));
                 break;
             }catch (Exception e){
                 logger.error("Element was not visible:"+ e.getMessage());
@@ -69,7 +71,7 @@ public class BasePage {
     }
 
     public void waitForPageToLoad(){
-        new WebDriverWait(driver,TIMEOUT).until(new ExpectedCondition<Boolean>() {
+        new WebDriverWait(driver,Duration.ofSeconds(TIMEOUT)).until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver driver){
                 return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
             }

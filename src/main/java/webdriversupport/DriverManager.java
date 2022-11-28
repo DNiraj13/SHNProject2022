@@ -55,7 +55,7 @@ public class DriverManager {
     }
 
     private static WebDriver getChromeDriver() {
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().driverVersion("107.0.5304.62").setup();
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
         chromeOptions.addArguments("--disable-popup-blocking");
