@@ -54,7 +54,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 28, 2022 10:06:56 AM</span>
+			<span class='label blue darken-3 suite-start-time'>Nov 28, 2022 12:22:16 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -69,7 +69,8 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
@@ -153,12 +154,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='4.348%'><span class='strong'>1</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='30.435%'>7</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='69.565%'>16</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='69.565%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='65.217%'>15</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='65.217%'>0</span> others
                 </div>
             </div>
         </div>
@@ -179,7 +180,7 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Validate the person Eligibility Criteria</span>
-						<span class='test-time'>Nov 28, 2022 10:06:57 AM</span>
+						<span class='test-time'>Nov 28, 2022 12:22:17 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -193,7 +194,7 @@
 	<div class='category-list'>
 		<span class='category label'>@Smoke</span>
 	</div>
-	<span class='duration right label'>0h 20m 1s+652ms</span>
+	<span class='duration right label'>0h 16m 15s+397ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Verify Eligibility Criteria for the given person</div>
 		<table class='runtime-table table-striped table'><tr><td>Country</td><td>GPOption</td><td>DentalCountry</td><td>DateOfBirth</td><td>PartnerStatus</td><td>PartnerClaimBenefits</td><td>PregnancyStatus</td><td>MilitaryServingInjuryStatus</td><td>DiabetesStatus</td><td>GlaucomaStatus</td><td>CareHomeStatus</td><td>SavingsRange</td></tr><tr><td>Wales</td><td>Yes</td><td>Wales</td><td>10-02-1998</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Wales</td><td>No</td><td>Scotland</td><td>10-02-1970</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr></table>
@@ -202,15 +203,20 @@
 		<li test-id='3' class='node scenario fail' status='fail'>
 			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Verify Eligibility Criteria for the given person</div>
 			<ul class='gc steps'>
-				<li test-id='5' class='gc given fail' status='fail'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Given user is in Eligibility Checker homePage</h6>
+				<li test-id='5' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given user is in Eligibility Checker homePage</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='6' class='gc when fail' status='fail'>
+					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_select_its_and_applicable(java.lang.String,java.lang.String,java.lang.String)"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When user select its "Wales","Yes" and applicable "Wales"</h6>
 					<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f8ff37fba1ad53c9e86cf3a63898960c, get {url=https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.QPmLI3}, goog:chromeOptions: {debuggerAddress: localhost:42941}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42941/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f8ff37fba1ad53c9e86cf3a63898960c
+Command: [871307cd39f7c5eb24a23b6a30f86f30, clickElement {id=bfb61f1c-b768-40f8-8f94-c22342c75051}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.P1E7t2}, goog:chromeOptions: {debuggerAddress: localhost:37579}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37579/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (871307cd39f7c5eb24a23b6a30f86f30)] -> xpath: //input[@value='Start now']]
+Session ID: 871307cd39f7c5eb24a23b6a30f86f30
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
 	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
 	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
@@ -222,10 +228,12 @@ Session ID: f8ff37fba1ad53c9e86cf3a63898960c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at pageobjects.EligibilityChecker.navigateToSite(EligibilityChecker.java:24)
-	at stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page(ApplicationStepDefs.java:19)
-	at ✽.user is in Eligibility Checker homePage(classpath:cucumber/EligibilityCriteria.feature:5)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageobjects.BasePage.clickElement(BasePage.java:84)
+	at pageobjects.EligibilityChecker.startEligibilityChecker(EligibilityChecker.java:34)
+	at stepdefs.ApplicationStepDefs.user_select_its_and_applicable(ApplicationStepDefs.java:24)
+	at ✽.user select its "Wales","Yes" and applicable "Wales"(classpath:cucumber/EligibilityCriteria.feature:6)
 Caused by: java.util.concurrent.TimeoutException
 	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
@@ -241,9 +249,11 @@ Caused by: java.util.concurrent.TimeoutException
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at pageobjects.EligibilityChecker.navigateToSite(EligibilityChecker.java:24)
-	at stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page(ApplicationStepDefs.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageobjects.BasePage.clickElement(BasePage.java:84)
+	at pageobjects.EligibilityChecker.startEligibilityChecker(EligibilityChecker.java:34)
+	at stepdefs.ApplicationStepDefs.user_select_its_and_applicable(ApplicationStepDefs.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -289,10 +299,6 @@ Caused by: java.util.concurrent.TimeoutException
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 </textarea>
 				</li>
-				<li test-id='6' class='gc when skip' status='skip'>
-					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_select_its_and_applicable(java.lang.String,java.lang.String,java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When user select its "Wales","Yes" and applicable "Wales"</h6>
-					<div class="node-step">Step skipped</div>
-				</li>
 				<li test-id='7' class='gc and skip' status='skip'>
 					<h6 class="step-name" title="stepdefs.ApplicationStepDefs.user_enters_its(java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And user enters its "10-02-1998"</h6>
 					<div class="node-step">Step skipped</div>
@@ -316,9 +322,9 @@ Caused by: java.util.concurrent.TimeoutException
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a58b9e0500acb12222be0499f82ff6b2, get {url=https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UlYWMr}, goog:chromeOptions: {debuggerAddress: localhost:43148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43148/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a58b9e0500acb12222be0499f82ff6b2
+Command: [e5be1dbdc3f0e5d3922d736b2ee70900, get {url=https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.8luIDl}, goog:chromeOptions: {debuggerAddress: localhost:40752}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40752/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5be1dbdc3f0e5d3922d736b2ee70900
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
 	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
 	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
@@ -415,28 +421,21 @@ Caused by: java.util.concurrent.TimeoutException
 				</li>
 				<li test-id='18' class='gc * fail' status='fail'>
 					<h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)</h6>
-					<textarea disabled class="code-block">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a58b9e0500acb12222be0499f82ff6b2, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UlYWMr}, goog:chromeOptions: {debuggerAddress: localhost:43148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43148/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a58b9e0500acb12222be0499f82ff6b2
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:571)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:111)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:76)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+Command: [e5be1dbdc3f0e5d3922d736b2ee70900, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.8luIDl}, goog:chromeOptions: {debuggerAddress: localhost:40752}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40752/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5be1dbdc3f0e5d3922d736b2ee70900
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
@@ -445,64 +444,6 @@ Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
 	at webdriversupport.DriverManager.closeDriver(DriverManager.java:111)
 	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:110)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:45280 after 180000 ms
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-	... 57 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:45280 after 180000 ms
-	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
-	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:829)
 </textarea>
 				</li>
 			</ul>
@@ -513,7 +454,7 @@ Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/1
 	<div class='category-list'>
 		<span class='category label'>@Smoke</span>
 	</div>
-	<span class='duration right label'>0h 0m 3s+323ms</span>
+	<span class='duration right label'>0h 0m 0s+163ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Verify Eligibility Criteria for the given person with partner claiming benefits</div>
 		<table class='runtime-table table-striped table'><tr><td>Country</td><td>GPOption</td><td>DentalCountry</td><td>DateOfBirth</td><td>PartnerStatus</td><td>PartnerClaimBenefits</td><td>UniversalCreditPayment</td><td>MilitaryServingInjuryStatus</td><td>DiabetesStatus</td><td>GlaucomaStatus</td><td>CareHomeStatus</td><td>SavingsRange</td></tr><tr><td>Wales</td><td>Yes</td><td>Wales</td><td>10-02-1998</td><td>Yes</td><td>Yes</td><td>yes-universal</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td>Wales</td><td>Yes</td><td>Wales</td><td>10-02-1963</td><td>No</td><td>Yes</td><td>not-yet</td><td>No</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td></tr></table>
@@ -528,9 +469,9 @@ Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/1
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a58b9e0500acb12222be0499f82ff6b2, get {url=https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UlYWMr}, goog:chromeOptions: {debuggerAddress: localhost:43148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43148/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a58b9e0500acb12222be0499f82ff6b2
+Command: [e5be1dbdc3f0e5d3922d736b2ee70900, get {url=https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.8luIDl}, goog:chromeOptions: {debuggerAddress: localhost:40752}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40752/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5be1dbdc3f0e5d3922d736b2ee70900
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -570,9 +511,9 @@ Session ID: a58b9e0500acb12222be0499f82ff6b2
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a58b9e0500acb12222be0499f82ff6b2, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UlYWMr}, goog:chromeOptions: {debuggerAddress: localhost:43148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43148/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a58b9e0500acb12222be0499f82ff6b2
+Command: [e5be1dbdc3f0e5d3922d736b2ee70900, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.8luIDl}, goog:chromeOptions: {debuggerAddress: localhost:40752}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40752/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5be1dbdc3f0e5d3922d736b2ee70900
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -602,9 +543,9 @@ Session ID: a58b9e0500acb12222be0499f82ff6b2
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a58b9e0500acb12222be0499f82ff6b2, get {url=https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UlYWMr}, goog:chromeOptions: {debuggerAddress: localhost:43148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43148/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a58b9e0500acb12222be0499f82ff6b2
+Command: [e5be1dbdc3f0e5d3922d736b2ee70900, get {url=https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.8luIDl}, goog:chromeOptions: {debuggerAddress: localhost:40752}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40752/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5be1dbdc3f0e5d3922d736b2ee70900
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -644,9 +585,9 @@ Session ID: a58b9e0500acb12222be0499f82ff6b2
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a58b9e0500acb12222be0499f82ff6b2, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UlYWMr}, goog:chromeOptions: {debuggerAddress: localhost:43148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43148/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a58b9e0500acb12222be0499f82ff6b2
+Command: [e5be1dbdc3f0e5d3922d736b2ee70900, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.8luIDl}, goog:chromeOptions: {debuggerAddress: localhost:40752}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40752/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5be1dbdc3f0e5d3922d736b2ee70900
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -733,32 +674,32 @@ Session ID: a58b9e0500acb12222be0499f82ff6b2
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 28, 2022 10:06:57 AM</td>
+										<td>Nov 28, 2022 12:22:17 PM</td>
 										<td class='linked' test-id='2'>Verify Eligibility Criteria for the given person</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Nov 28, 2022 10:06:57 AM</td>
+										<td>Nov 28, 2022 12:22:17 PM</td>
 										<td class='linked' test-id='3'>Verify Eligibility Criteria for the given person</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Nov 28, 2022 10:16:53 AM</td>
+										<td>Nov 28, 2022 12:34:36 PM</td>
 										<td class='linked' test-id='11'>Verify Eligibility Criteria for the given person</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Nov 28, 2022 10:27:01 AM</td>
+										<td>Nov 28, 2022 12:38:33 PM</td>
 										<td class='linked' test-id='19'>Verify Eligibility Criteria for the given person with partner claiming benefits</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Nov 28, 2022 10:27:01 AM</td>
+										<td>Nov 28, 2022 12:38:33 PM</td>
 										<td class='linked' test-id='20'>Verify Eligibility Criteria for the given person with partner claiming benefits</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Nov 28, 2022 10:27:04 AM</td>
+										<td>Nov 28, 2022 12:38:33 PM</td>
 										<td class='linked' test-id='28'>Verify Eligibility Criteria for the given person with partner claiming benefits</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -811,16 +752,17 @@ Session ID: a58b9e0500acb12222be0499f82ff6b2
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 28, 2022 10:06:57 AM</td>
-										<td class='linked' test-id='5'>Given user is in Eligibility Checker homePage</td>
+										<td>Nov 28, 2022 12:25:38 PM</td>
+										<td class='linked' test-id='6'>When user select its "Wales","Yes" and applicable "Wales"</td>
 										<td>
 											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f8ff37fba1ad53c9e86cf3a63898960c, get {url=https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.QPmLI3}, goog:chromeOptions: {debuggerAddress: localhost:42941}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42941/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f8ff37fba1ad53c9e86cf3a63898960c
+Command: [871307cd39f7c5eb24a23b6a30f86f30, clickElement {id=bfb61f1c-b768-40f8-8f94-c22342c75051}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.P1E7t2}, goog:chromeOptions: {debuggerAddress: localhost:37579}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37579/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (871307cd39f7c5eb24a23b6a30f86f30)] -> xpath: //input[@value='Start now']]
+Session ID: 871307cd39f7c5eb24a23b6a30f86f30
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
 	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
 	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
@@ -832,10 +774,12 @@ Session ID: f8ff37fba1ad53c9e86cf3a63898960c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at pageobjects.EligibilityChecker.navigateToSite(EligibilityChecker.java:24)
-	at stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page(ApplicationStepDefs.java:19)
-	at ✽.user is in Eligibility Checker homePage(classpath:cucumber/EligibilityCriteria.feature:5)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageobjects.BasePage.clickElement(BasePage.java:84)
+	at pageobjects.EligibilityChecker.startEligibilityChecker(EligibilityChecker.java:34)
+	at stepdefs.ApplicationStepDefs.user_select_its_and_applicable(ApplicationStepDefs.java:24)
+	at ✽.user select its "Wales","Yes" and applicable "Wales"(classpath:cucumber/EligibilityCriteria.feature:6)
 Caused by: java.util.concurrent.TimeoutException
 	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
@@ -851,9 +795,11 @@ Caused by: java.util.concurrent.TimeoutException
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at pageobjects.EligibilityChecker.navigateToSite(EligibilityChecker.java:24)
-	at stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page(ApplicationStepDefs.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageobjects.BasePage.clickElement(BasePage.java:84)
+	at pageobjects.EligibilityChecker.startEligibilityChecker(EligibilityChecker.java:34)
+	at stepdefs.ApplicationStepDefs.user_select_its_and_applicable(ApplicationStepDefs.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -901,16 +847,16 @@ Caused by: java.util.concurrent.TimeoutException
 										</td>
 									</tr>
 									<tr>
-										<td>Nov 28, 2022 10:16:53 AM</td>
+										<td>Nov 28, 2022 12:34:36 PM</td>
 										<td class='linked' test-id='13'>Given user is in Eligibility Checker homePage</td>
 										<td>
 											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a58b9e0500acb12222be0499f82ff6b2, get {url=https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UlYWMr}, goog:chromeOptions: {debuggerAddress: localhost:43148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43148/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a58b9e0500acb12222be0499f82ff6b2
+Command: [e5be1dbdc3f0e5d3922d736b2ee70900, get {url=https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.8luIDl}, goog:chromeOptions: {debuggerAddress: localhost:40752}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40752/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5be1dbdc3f0e5d3922d736b2ee70900
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
 	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
 	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
@@ -987,122 +933,6 @@ Caused by: java.util.concurrent.TimeoutException
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.remote.UnreachableBrowserException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 28, 2022 10:20:15 AM</td>
-										<td class='linked' test-id='18'>stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a58b9e0500acb12222be0499f82ff6b2, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UlYWMr}, goog:chromeOptions: {debuggerAddress: localhost:43148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43148/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a58b9e0500acb12222be0499f82ff6b2
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:571)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:111)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:76)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
-	at webdriversupport.DriverManager.closeDriver(DriverManager.java:111)
-	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:110)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:45280 after 180000 ms
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-	... 57 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:45280 after 180000 ms
-	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
-	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:829)
 </textarea>
 										</td>
 									</tr>
@@ -1114,7 +944,7 @@ Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/1
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
 						<span class='exception-name'>org.openqa.selenium.NoSuchSessionException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>4</span></span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>5</span></span>
 					</div>
 					<div class='exception-content hide'>
 						<div class='exception-tests'>
@@ -1128,45 +958,16 @@ Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/1
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 28, 2022 10:27:01 AM</td>
-										<td class='linked' test-id='22'>Given user is in Eligibility Checker homePage</td>
+										<td>Nov 28, 2022 12:37:53 PM</td>
+										<td class='linked' test-id='18'>stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)</td>
 										<td>
 											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a58b9e0500acb12222be0499f82ff6b2, get {url=https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UlYWMr}, goog:chromeOptions: {debuggerAddress: localhost:43148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43148/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a58b9e0500acb12222be0499f82ff6b2
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at pageobjects.EligibilityChecker.navigateToSite(EligibilityChecker.java:24)
-	at stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page(ApplicationStepDefs.java:19)
-	at ✽.user is in Eligibility Checker homePage(classpath:cucumber/EligibilityCriteria.feature:19)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 28, 2022 10:27:04 AM</td>
-										<td class='linked' test-id='27'>stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a58b9e0500acb12222be0499f82ff6b2, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UlYWMr}, goog:chromeOptions: {debuggerAddress: localhost:43148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43148/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a58b9e0500acb12222be0499f82ff6b2
+Command: [e5be1dbdc3f0e5d3922d736b2ee70900, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.8luIDl}, goog:chromeOptions: {debuggerAddress: localhost:40752}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40752/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5be1dbdc3f0e5d3922d736b2ee70900
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1187,16 +988,16 @@ Session ID: a58b9e0500acb12222be0499f82ff6b2
 										</td>
 									</tr>
 									<tr>
-										<td>Nov 28, 2022 10:27:04 AM</td>
-										<td class='linked' test-id='30'>Given user is in Eligibility Checker homePage</td>
+										<td>Nov 28, 2022 12:38:33 PM</td>
+										<td class='linked' test-id='22'>Given user is in Eligibility Checker homePage</td>
 										<td>
 											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a58b9e0500acb12222be0499f82ff6b2, get {url=https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UlYWMr}, goog:chromeOptions: {debuggerAddress: localhost:43148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43148/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a58b9e0500acb12222be0499f82ff6b2
+Command: [e5be1dbdc3f0e5d3922d736b2ee70900, get {url=https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.8luIDl}, goog:chromeOptions: {debuggerAddress: localhost:40752}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40752/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5be1dbdc3f0e5d3922d736b2ee70900
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1216,16 +1017,75 @@ Session ID: a58b9e0500acb12222be0499f82ff6b2
 										</td>
 									</tr>
 									<tr>
-										<td>Nov 28, 2022 10:27:04 AM</td>
+										<td>Nov 28, 2022 12:38:33 PM</td>
+										<td class='linked' test-id='27'>stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5be1dbdc3f0e5d3922d736b2ee70900, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.8luIDl}, goog:chromeOptions: {debuggerAddress: localhost:40752}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40752/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5be1dbdc3f0e5d3922d736b2ee70900
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
+	at webdriversupport.DriverManager.closeDriver(DriverManager.java:111)
+	at stepdefs.GeneralStepDefs.tearDown(GeneralStepDefs.java:55)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2022 12:38:33 PM</td>
+										<td class='linked' test-id='30'>Given user is in Eligibility Checker homePage</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5be1dbdc3f0e5d3922d736b2ee70900, get {url=https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.8luIDl}, goog:chromeOptions: {debuggerAddress: localhost:40752}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40752/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5be1dbdc3f0e5d3922d736b2ee70900
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at pageobjects.EligibilityChecker.navigateToSite(EligibilityChecker.java:24)
+	at stepdefs.ApplicationStepDefs.user_is_in_eligibility_checker_home_page(ApplicationStepDefs.java:19)
+	at ✽.user is in Eligibility Checker homePage(classpath:cucumber/EligibilityCriteria.feature:19)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Nov 28, 2022 12:38:33 PM</td>
 										<td class='linked' test-id='35'>stepdefs.GeneralStepDefs.tearDown(io.cucumber.java.Scenario)</td>
 										<td>
 											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ip-172-31-33-189.eu-west-2.compute.internal', ip: '172.31.33.189', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1160.80.1.el7.x86_64', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a58b9e0500acb12222be0499f82ff6b2, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.UlYWMr}, goog:chromeOptions: {debuggerAddress: localhost:43148}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43148/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a58b9e0500acb12222be0499f82ff6b2
+Command: [e5be1dbdc3f0e5d3922d736b2ee70900, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.8luIDl}, goog:chromeOptions: {debuggerAddress: localhost:40752}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40752/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5be1dbdc3f0e5d3922d736b2ee70900
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1285,19 +1145,19 @@ Session ID: a58b9e0500acb12222be0499f82ff6b2
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 28, 2022 10:06:56 AM</div>
+					<div class='panel-lead'>Nov 28, 2022 12:22:16 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 28, 2022 10:27:04 AM</div>
+			 		<div class='panel-lead'>Nov 28, 2022 12:38:33 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 20m 8s+153ms</div>
+					<div class='panel-lead'>0h 16m 16s+663ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -1351,20 +1211,20 @@ Session ID: a58b9e0500acb12222be0499f82ff6b2
 				debugChild: 0,
 				exceptionsChild: 4,
 				grandChildCount: 23,
-				passGrandChild: 0,
+				passGrandChild: 1,
 				failGrandChild: 7,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 16,
+				skipGrandChild: 15,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 23,
+				exceptionsGrandChild: 22,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Validate the person Eligibility Criteria":1207.063
+			        "Validate the person Eligibility Criteria":975.591
 			};
 		</script>
 	
