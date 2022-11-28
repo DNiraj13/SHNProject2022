@@ -2,6 +2,7 @@ package webdriversupport;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -55,12 +56,29 @@ public class DriverManager {
     }
 
     private static WebDriver getChromeDriver() {
-        WebDriverManager.chromedriver().driverVersion("107.0.5304.62").setup();
+        WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
         chromeOptions.addArguments("--disable-popup-blocking");
         chromeOptions.addArguments("--disable-notifications");
         chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--disable-gpu");
+        chromeOptions.addArguments("--no-sandbox");
+        chromeOptions.addArguments("--disable-dev-shm-usage");
+        chromeOptions.addArguments("--ignore-ssl-errors=yes");
+        chromeOptions.addArguments("--ignore-certificate-errors");
+        chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+        chromeOptions.setAcceptInsecureCerts(true);
+        chromeOptions.addArguments("--allow-insecure-localhost");
+
+        chromeOptions.addArguments("--ignore-ssl-errors=yes");
+        chromeOptions.addArguments("--ignore-certificate-errors");
+
+        DesiredCapabilities driverCap = new DesiredCapabilities();
+        driverCap.setBrowserName("chrome");
+        driverCap.setPlatform(Platform.LINUX);
+        driverCap.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+
         WebDriver chromeDriver = new ChromeDriver(chromeOptions);
         chromeDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         chromeDriver.manage().window().setSize(new Dimension(1208, 1024));
